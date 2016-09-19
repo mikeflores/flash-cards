@@ -9,23 +9,24 @@ a mobile friendly collection of flash cards for learning.
 - the user can make his/her own cards using data from a JSON file to load 
 
     ```javascript
-    var decks = {
-        deckName : "Star Wars Characters",
-        cards: { 
-            cardOne: { 
+    var deck = {
+        deckName: "Star Wars Characters",
+        cards: [ 
+            { 
                 term: "Vader", 
                 definition: "A whiny dude that's more machine than human." 
             },
-            cardTwo: { 
+            { 
                 term: "Luke Skywalker",
                 definition: "A whiny dude from Tatooine that becomes a Jedi." 
             },
-            cardThree: { 
+            {
                 term: "Rey", 
                 definition: "A young girl with a mysterious past. She is not whiny." 
             }
-        }
+        ]
     }
+   var vader =  deck.cards[0]
     ```
 
 ## Not MVP Beta Release

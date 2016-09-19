@@ -1,0 +1,33 @@
+// Partials
+@import "partials/normalize";
+
+$dark-blue: #2B4450;
+$lighter-blue: #DFEBED;
+$light-blue: #F1FAFB;
+
+body {
+    background-color: $dark-blue;
+}
+
+// definition list reset
+dl dd {
+    margin-left: 0;
+}
+
+dl {
+    width: 100%;
+}
+
+.card {
+    padding: 1em;
+}
+
+// Styles
+h1 {
+    font-size: 1em;
+    color: $lighter-blue;
+}
+
+.card .term, .card .definition {
+    background: $light-blue;
+}
