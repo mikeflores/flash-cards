@@ -2,27 +2,33 @@
 a mobile friendly collection of flash cards for learning.
 
 ## Pieces
-- a collection of subjects in sets of flash-cards (deck)
-- in each subject there are cards
-- in each card there is a term or topic paired with a definition (use HTML's definition elements)
+===
+MVP
+- a collection of flash-card decks of various topics
+    - in each deck there are cards
+        - in each card there is a term or topic & a definition (use HTML's definition elements)
 - number of cards in a deck is unlimited
 - the user can make his/her own cards using data from a JSON file to load 
-    example:
-    [ 
-        deckname: cool people = [
-            [ card-1: = 
-                term:
-                definition:
-            ],
-            [ card-2:
-                term:
-                definition:
-            ],
-            [ card-3:
-                term:
-                definition:
-            ]
-    ]
+===
+- there is a timer
+    example
+    var decks = {
+        deckName : "Star Wars Characters",
+        cards: { 
+            cardOne: { 
+                term: "Vader", 
+                definition: "A whiny dude that's more machine than human." 
+            },
+            cardTwo: { 
+                term: "Luke Skywalker",
+                definition: "A whiny dude from Tatooine that becomes a Jedi." 
+            },
+            cardThree: { 
+                term: "Rey", 
+                definition: "A young girl with a mysterious past. She is not whiny." 
+            }
+        }
+    }
 
 ## Draft of how this will work
 
