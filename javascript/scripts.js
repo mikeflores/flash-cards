@@ -22,12 +22,15 @@ var vader =  deck.cards[0]
 
 $(document).ready(function(){
     $("h1").html(deck.deckName)
-    $("dt").html(deck.cards[1].term)
-    $(".definition").html(deck.cards[2].definition).hide()
-    console.log("Document Ready")
+    $("dt").html(deck.cards[0].term)
+    $(".definition").html(deck.cards[0].definition).hide()
+    $(".mark-as").hide()
+    // console.log("Document Ready")
 })
 
 $(".card").on("click", function(event){
     $(".definition").toggle()
-    console.log("works")
+    $("dt").html(deck.cards[0].term).toggle()
+    $(".mark-as").toggle()
+    // console.log("works")
 })

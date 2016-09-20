@@ -13,27 +13,59 @@ body {
     perspective: 1000px;
 }
 
-// definition list reset
-dl dd {
-    margin-left: 0;
-}
-
-dl {
-    width: 100%;
-}
-
 .card {
     padding: 1em;
     cursor: pointer;
     background: orange;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    &.mark-as {
+        justify-content: flex-start;
+        padding-left: 0;
+        li {
+            &:first-child {
+                margin-right: 0.5em;
+            }
+            &:last-child {
+                margin-left: 0.5em;
+            }
+        }
+    }
+    li {
+        display: inline;
+        margin: 0 1em;
+        &:first-child, &:last-child {
+            margin: 0;
+        }
+        button {
+            width: 90px;
+            height: 30px;
+        }
+    }
+}
 // Styles
 h1 {
-    font-size: 1em;
+    font-size: 2em;
     color: $fade;
 }
 
-.card .term, .card .definition {
-    background: $light-blue;
+h1, dt, dd { padding: 1em; }
+
+dt {
+    text-align: center;
+}
+// definition list reset
+dt, dd {
+    font-size: 3em;
+    margin-left: 0;
+}
+
+.card {
+    .term, .definition {
+        background: $light-blue;
+    }
 }
