@@ -444,80 +444,102 @@ textarea {
   /* 2 */
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 body {
   background-color: #061c27;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .container {
   perspective: 1000px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .card {
   padding: 1em;
   cursor: pointer;
   background: orange;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
 }
-/* line 26, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 ul.mark-as {
   justify-content: flex-start;
   padding-left: 0;
 }
-/* line 30, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 ul.mark-as li:first-child {
   margin-right: 0.5em;
 }
-/* line 33, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 ul.mark-as li:last-child {
   margin-left: 0.5em;
 }
-/* line 38, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 ul li {
   display: inline;
   margin: 0 1em;
 }
-/* line 41, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 ul li:first-child, ul li:last-child {
   margin: 0;
 }
-/* line 44, ../sass/screen.scss */
-ul li button {
-  width: 90px;
-  height: 30px;
+/* line 54, ../sass/screen.scss */
+ul li a {
+  color: #000;
+  background: #FFF;
+  padding: 0.3em 0.9em;
+  text-decoration: none;
+}
+/* line 61, ../sass/screen.scss */
+ul li .right {
+  color: #8bdab3;
+  background-color: #25744d;
+}
+/* line 64, ../sass/screen.scss */
+ul li .right:hover, ul li .right:active {
+  color: #FFF;
+  background-color: #184e33;
+}
+/* line 70, ../sass/screen.scss */
+ul li .wrong {
+  color: #ff9999;
+  background-color: #b30000;
+}
+/* line 73, ../sass/screen.scss */
+ul li .wrong:hover, ul li .wrong:active {
+  color: #FFF;
+  background-color: #800000;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 h1 {
   font-size: 2em;
   color: #1f5671;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 h1, dt, dd {
   padding: 1em;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 dt {
   text-align: center;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 dt, dd {
   font-size: 3em;
   margin-left: 0;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .card .term, .card .definition {
   background: #F1FAFB;
 }

@@ -4,6 +4,16 @@
 $dark-blue: #061c27;
 $fade: #1f5671;
 $light-blue: #F1FAFB;
+$white: #FFF;
+$black: #000;
+
+$dark-green: #25744d;
+$light-green: #8bdab3;
+$hover-green: #184e33;
+
+$dark-red: #b30000;
+$light-red: #ff9999;
+$hover-red: #800000;
 
 body {
     background-color: $dark-blue;
@@ -41,9 +51,29 @@ ul {
         &:first-child, &:last-child {
             margin: 0;
         }
-        button {
-            width: 90px;
-            height: 30px;
+        a {
+            color: $black;
+            background: $white;
+            padding: 0.3em 0.9em;
+            text-decoration: none;
+        }
+
+        .right {
+            color: $light-green;
+            background-color: $dark-green;
+            &:hover, &:active {
+                color: $white;
+                background-color: $hover-green;
+            }
+        }
+
+        .wrong {
+            color: $light-red;
+            background-color: $dark-red;
+            &:hover, &:active {
+                color: $white;
+                background-color: $hover-red;
+            }
         }
     }
 }
