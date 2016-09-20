@@ -1,12 +1,16 @@
 // Partials
 @import "partials/normalize";
 
-$dark-blue: #2B4450;
-$lighter-blue: #DFEBED;
+$dark-blue: #061c27;
+$fade: #1f5671;
 $light-blue: #F1FAFB;
 
 body {
     background-color: $dark-blue;
+}
+
+.container {
+    perspective: 1000px;
 }
 
 // definition list reset
@@ -25,7 +29,7 @@ dl {
 // Styles
 h1 {
     font-size: 1em;
-    color: $lighter-blue;
+    color: $fade;
 }
 
 .card .term, .card .definition {
