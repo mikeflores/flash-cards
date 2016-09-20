@@ -6,6 +6,7 @@ $fade: #1f5671;
 $light-blue: #F1FAFB;
 $white: #FFF;
 $black: #000;
+$dark-gray: #555;
 
 $dark-green: #25744d;
 $light-green: #8bdab3;
@@ -92,6 +93,14 @@ dt {
 dt, dd {
     font-size: 3em;
     margin-left: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    color: $dark-gray;
 }
 
 .card {
