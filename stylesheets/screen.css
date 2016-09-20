@@ -449,28 +449,35 @@ body {
   background-color: #061c27;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
+.container {
+  perspective: 1000px;
+}
+
+/* line 17, ../sass/screen.scss */
 dl dd {
   margin-left: 0;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 dl {
   width: 100%;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .card {
   padding: 1em;
+  cursor: pointer;
+  background: orange;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 h1 {
   font-size: 1em;
   color: #1f5671;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .card .term, .card .definition {
   background: #F1FAFB;
 }
