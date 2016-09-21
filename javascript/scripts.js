@@ -1,31 +1,3 @@
-// Star Wars Object
-var deck = {
-    deckName: "Star Wars Universe",
-    cards: [ 
-        { 
-            term: "Vader", 
-            definition: "A whiny dude that's more machine than human." 
-        },
-        { 
-            term: "Luke Skywalker",
-            definition: "A whiny dude from Tatooine that becomes a Jedi." 
-        },
-        {
-            term: "Rey", 
-            definition: "A young girl with a mysterious past. She is not whiny." 
-        },
-        {
-            term: "Obi Wan Kenobi", 
-            definition: "Probably the most well written character in the Star Wars canon." 
-        },
-        {
-            term: "Palpatine", 
-            definition: "An evil dude that rules the Empire." 
-        }
-    ]
-}
-// =====================================
-
 $(document).ready(function(){
     $(".deckName").html(deck.deckName) // fills in the name of the deck for this page
     showCard(0) // starts the deck at card number 1
@@ -73,7 +45,7 @@ function showCard(index){
         index = -1
         $(".next").html("start over")
         $(".status, .previous").hide()
-        var definition = "These aren't the droids you're looking for!"
+        var definition = message
     }
     $("dd").html(definition).hide() // fills in the definition and hides it
     $("dt").html(term).show() // fills in the term
