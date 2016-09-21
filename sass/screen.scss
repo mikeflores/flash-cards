@@ -3,7 +3,7 @@
 
 $dark-blue: #061c27;
 $fade: #1f5671;
-$light-blue: #F1FAFB;
+$light-blue: #C6E2FF;
 $white: #FFF;
 $black: #000;
 $dark-gray: #555;
@@ -20,16 +20,22 @@ body {
     background-color: $dark-blue;
 }
 
+.game-name {
+    color: $white;
+    font-size: 3em;
+    padding-bottom: 0;
+}
+
 .card {
     padding: 1em;
     cursor: pointer;
-    background: orange;
+    background: $light-blue;
 }
 
-.game-name {
-    color: $light-blue;
-    font-size: 3em;
-    padding-bottom: 0;
+.card {
+    .term, .definition {
+        background: $white;
+    }
 }
 
 ul {
@@ -163,10 +169,4 @@ dt {
 
 dd {
     color: $dark-gray;
-}
-
-.card {
-    .term, .definition {
-        background: $light-blue;
-    }
 }

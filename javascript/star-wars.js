@@ -29,18 +29,25 @@ $(document).ready(function(){
 })
 
 $(".card dt, .card dd").on("click", function(event){
-    $("dd").toggle()
+    $("dd").toggle() // event that allows for toggling
     $("dt").toggle()
-    $(".mark-as").toggle()
-    // console.log("works")
+    // $(".mark-as").toggle()
 })
 
-// this skips to the next card
-$(".js-skip").on("click", function(event) {
+// event listener to get to the previous card
+$(".previous").on("click", function(event) {
     event.preventDefault()
     var index = $(".card").attr("data-index")
-    showCard(parseInt(index)+1)
+    showCard(parseInt(index)-1) // not sure what this does
 })
+
+// event listener to get to the next card
+$(".next").on("click", function(event) {
+    event.preventDefault()
+    var index = $(".card").attr("data-index")
+    showCard(parseInt(index)+1) // not sure what this does
+})
+
 
 // if no more cards call myScore
     var numRight = 0
@@ -58,11 +65,11 @@ $(".js-skip").on("click", function(event) {
 
 function showCard(index){
     // debugger
-    $(".definition").html(deck.cards[index].definition).hide()
-    $("dt").html(deck.cards[index].term)
+    $("dd").html(deck.cards[index].definition).hide() // fills in the definition and hides it
+    $("dt").html(deck.cards[index].term) // fills in the term
     $(".card").attr("data-index", index)
-    $(".card-number").html(index+1)
-    $(".number-of-cards").html(deck.cards.length) // fills in the total number of cards
+    $(".card-number").html(index+1) // fills in the card order
+    $(".number-of-cards").html(deck.cards.length) // fills in the total number of cards in the deck
 }
 
 // at the end viewScore
