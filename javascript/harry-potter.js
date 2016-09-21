@@ -1,49 +1,60 @@
-// Objects
+// Star Wars Object
 var deck = {
-    deckName: "Star Wars Characters",
+    deckName: "The Wizarding World of Harry Potter",
     cards: [ 
         { 
-            term: "Vader", 
+            term: "Sirius Black", 
             definition: "A whiny dude that's more machine than human." 
         },
         { 
-            term: "Luke Skywalker",
+            term: "Severus Snape",
             definition: "A whiny dude from Tatooine that becomes a Jedi." 
         },
         {
-            term: "Rey", 
+            term: "Albus Dumbledore", 
             definition: "A young girl with a mysterious past. She is not whiny." 
+        },
+        {
+            term: "Luna Lovegood", 
+            definition: "Probably the most well written character in the Star Wars canon." 
         }
     ]
 }
-var vader =  deck.cards[0]
 // =====================================
 
 $(document).ready(function(){
-    $("h1").html(deck.deckName)
+    $(".deckName").html(deck.deckName)
     showCard(0)
     $(".mark-as").hide()
-    // console.log("Document Ready")
-    // for (i = 0; i < deck.length; i++) {
-    //     $(".card").append("<div class='.card'></div>")
-    // }
-
 })
 
 $(".card dt, .card dd").on("click", function(event){
-    $(".definition").toggle()
+    $("dd").toggle()
     $("dt").toggle()
     $(".mark-as").toggle()
     // console.log("works")
 })
 
+// this skips to the next card
 $(".js-skip").on("click", function(event) {
-    console.log("here")
     event.preventDefault()
     var index = $(".card").attr("data-index")
     showCard(parseInt(index)+1)
-    console.log(index)
 })
+
+// if no more cards call myScore
+    var numRight = 0
+    $(".right").on("click", function(event) {
+        event.preventDefault()
+        numRight++
+        console.log(numRight)
+    })
+    var numWrong = 0
+    $(".right").on("click", function(event) {
+        event.preventDefault()
+        numWrong++
+        console.log(numWrong)
+    })
 
 function showCard(index){
     // debugger
@@ -52,3 +63,5 @@ function showCard(index){
     $(".card").attr("data-index", index)
     $(".card-number").html(index+1)
 }
+
+// at the end viewScore

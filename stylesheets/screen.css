@@ -450,106 +450,140 @@ body {
 }
 
 /* line 23, ../sass/screen.scss */
-.container {
-  perspective: 1000px;
-}
-
-/* line 27, ../sass/screen.scss */
 .card {
   padding: 1em;
   cursor: pointer;
   background: orange;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
+.game-name {
+  color: #F1FAFB;
+  font-size: 3em;
+  padding-bottom: 0;
+}
+
+/* line 35, ../sass/screen.scss */
 ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
 }
-/* line 37, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 ul.mark-as {
   justify-content: flex-start;
   padding-left: 0;
 }
-/* line 41, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 ul.mark-as li:first-child {
   margin-right: 0.5em;
 }
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 ul.mark-as li:last-child {
   margin-left: 0.5em;
 }
-/* line 49, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 ul li {
   display: inline;
   margin: 0 1em;
 }
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 ul li:first-child, ul li:last-child {
   margin: 0;
 }
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 ul li a {
   color: #000;
   background: #FFF;
   padding: 0.3em 0.9em;
   text-decoration: none;
 }
-/* line 62, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 ul li .right {
   color: #8bdab3;
   background-color: #25744d;
 }
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 ul li .right:hover, ul li .right:active {
   color: #FFF;
   background-color: #184e33;
 }
-/* line 71, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 ul li .wrong {
   color: #ff9999;
   background-color: #b30000;
 }
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 ul li .wrong:hover, ul li .wrong:active {
   color: #FFF;
   background-color: #800000;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
+.select-deck p, .select-deck a {
+  font-size: 1.5em;
+}
+/* line 91, ../sass/screen.scss */
+.select-deck p {
+  padding: 0 2em;
+  color: #FFF;
+  margin-top: 0;
+}
+/* line 97, ../sass/screen.scss */
+.select-deck > ul {
+  display: flex;
+  flex-direction: column;
+}
+/* line 101, ../sass/screen.scss */
+.select-deck > ul li {
+  margin: 2em 0;
+}
+/* line 103, ../sass/screen.scss */
+.select-deck > ul li a {
+  color: #1f5671;
+  font-weight: bold;
+  margin-left: 0.4em;
+  padding: 0.5em;
+}
+/* line 109, ../sass/screen.scss */
+.select-deck > ul li a:hover {
+  color: #FFF;
+  background: orange;
+}
+
+/* line 119, ../sass/screen.scss */
 h1 {
   font-size: 2em;
   color: #1f5671;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 h1, dt, dd {
   padding: 1em;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 dt {
   text-align: center;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 dt, dd {
   font-size: 3em;
   margin-left: 0;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 dd {
   color: #555;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .card .term, .card .definition {
   background: #F1FAFB;
 }

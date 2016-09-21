@@ -20,14 +20,16 @@ body {
     background-color: $dark-blue;
 }
 
-.container {
-    perspective: 1000px;
-}
-
 .card {
     padding: 1em;
     cursor: pointer;
     background: orange;
+}
+
+.game-name {
+    color: $light-blue;
+    font-size: 3em;
+    padding-bottom: 0;
 }
 
 ul {
@@ -78,6 +80,41 @@ ul {
         }
     }
 }
+
+
+
+.select-deck {
+    p, a {
+        font-size: 1.5em;
+    }
+
+    p {
+        padding: 0 2em;
+        color: $white;
+        margin-top: 0;
+    }
+    
+    > ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 2em 0;
+            a {
+                color: $fade;
+                font-weight: bold;
+                margin-left: 0.4em;
+                padding: 0.5em;
+
+                &:hover {
+                    color: $white;
+                    background: orange;
+                }
+            }
+        }
+    }
+}
+
 // Styles
 h1 {
     font-size: 2em;
