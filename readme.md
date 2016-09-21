@@ -1,5 +1,5 @@
 # Flash Cards
-decks cards for fun.
+decks of cards for fun.
 
 ## User Stories
 As a user, I want to:
