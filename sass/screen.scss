@@ -7,6 +7,7 @@ $light-blue: #C6E2FF;
 $white: #FFF;
 $black: #000;
 $dark-gray: #555;
+$hover: #FCFFCC;
 
 $dark-green: #25744d;
 $light-green: #8bdab3;
@@ -35,7 +36,14 @@ body {
 .card {
     .term, .definition {
         background: $white;
+            &:hover {
+            background: $hover;
+        }
     }
+}
+
+.grade {
+    display: none;
 }
 
 ul {
@@ -43,7 +51,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     
-    &.mark-as {
+    &.grade {
         justify-content: flex-start;
         padding-left: 0;
         li {
@@ -68,12 +76,17 @@ ul {
         }
         a {
             text-align: center;
-            width: 5em;
+            width: 6em;
             color: $black;
             background: $white;
             padding: 0.9em;
+            color: $fade;
             text-decoration: none;
+            font-weight: bold;
             display: inline-block;
+            &:hover, &:active {
+                background-color: orange;
+            }
         }
 
         .right {
