@@ -36,6 +36,7 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    
     &.mark-as {
         justify-content: flex-start;
         padding-left: 0;
@@ -48,17 +49,25 @@ ul {
             }
         }
     }
+    
     li {
         display: inline;
         margin: 0 1em;
         &:first-child, &:last-child {
             margin: 0;
         }
+
+        &.status {
+            padding: 0.9em;
+        }
         a {
+            text-align: center;
+            width: 5em;
             color: $black;
             background: $white;
-            padding: 0.3em 0.9em;
+            padding: 0.9em;
             text-decoration: none;
+            display: inline-block;
         }
 
         .right {
@@ -94,13 +103,14 @@ ul {
         margin-top: 0;
     }
     
-    > ul {
+    ul {
         display: flex;
         flex-direction: column;
 
         li {
-            margin: 2em 0;
+            margin: 2em 0 1em 0;
             a {
+                width: 6em;
                 color: $fade;
                 font-weight: bold;
                 margin-left: 0.4em;
@@ -121,8 +131,23 @@ h1 {
     color: $fade;
 }
 
+.exit {
+    display: block;
+    font-size: 1.2em;
+    padding: 0 0.7em;
+    margin: 1em;
+    color: $fade;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+    }
+}
+
 h1, dt, dd { padding: 1em; }
 
+h1 {
+    padding-bottom: 0;
+}
 dt {
     text-align: center;
 }

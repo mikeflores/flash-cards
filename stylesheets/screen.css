@@ -469,121 +469,148 @@ ul {
   display: flex;
   justify-content: flex-end;
 }
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 ul.mark-as {
   justify-content: flex-start;
   padding-left: 0;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 ul.mark-as li:first-child {
   margin-right: 0.5em;
 }
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 ul.mark-as li:last-child {
   margin-left: 0.5em;
 }
-/* line 51, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 ul li {
   display: inline;
   margin: 0 1em;
 }
-/* line 54, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 ul li:first-child, ul li:last-child {
   margin: 0;
 }
-/* line 57, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
+ul li.status {
+  padding: 0.9em;
+}
+/* line 63, ../sass/screen.scss */
 ul li a {
+  text-align: center;
+  width: 5em;
   color: #000;
   background: #FFF;
-  padding: 0.3em 0.9em;
+  padding: 0.9em;
   text-decoration: none;
+  display: inline-block;
 }
-/* line 64, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 ul li .right {
   color: #8bdab3;
   background-color: #25744d;
 }
-/* line 67, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 ul li .right:hover, ul li .right:active {
   color: #FFF;
   background-color: #184e33;
 }
-/* line 73, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 ul li .wrong {
   color: #ff9999;
   background-color: #b30000;
 }
-/* line 76, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 ul li .wrong:hover, ul li .wrong:active {
   color: #FFF;
   background-color: #800000;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .select-deck p, .select-deck a {
   font-size: 1.5em;
 }
-/* line 91, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .select-deck p {
   padding: 0 2em;
   color: #FFF;
   margin-top: 0;
 }
-/* line 97, ../sass/screen.scss */
-.select-deck > ul {
+/* line 106, ../sass/screen.scss */
+.select-deck ul {
   display: flex;
   flex-direction: column;
 }
-/* line 101, ../sass/screen.scss */
-.select-deck > ul li {
-  margin: 2em 0;
+/* line 110, ../sass/screen.scss */
+.select-deck ul li {
+  margin: 2em 0 1em 0;
 }
-/* line 103, ../sass/screen.scss */
-.select-deck > ul li a {
+/* line 112, ../sass/screen.scss */
+.select-deck ul li a {
+  width: 6em;
   color: #1f5671;
   font-weight: bold;
   margin-left: 0.4em;
   padding: 0.5em;
 }
-/* line 109, ../sass/screen.scss */
-.select-deck > ul li a:hover {
+/* line 119, ../sass/screen.scss */
+.select-deck ul li a:hover {
   color: #FFF;
   background: orange;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 h1 {
   font-size: 2em;
   color: #1f5671;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
+.exit {
+  display: block;
+  font-size: 1.2em;
+  padding: 0 0.7em;
+  margin: 1em;
+  color: #1f5671;
+  text-decoration: none;
+}
+/* line 141, ../sass/screen.scss */
+.exit:hover {
+  color: #FFF;
+}
+
+/* line 146, ../sass/screen.scss */
 h1, dt, dd {
   padding: 1em;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
+h1 {
+  padding-bottom: 0;
+}
+
+/* line 151, ../sass/screen.scss */
 dt {
   text-align: center;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 dt, dd {
   font-size: 3em;
   margin-left: 0;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 dd {
   color: #555;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .card .term, .card .definition {
   background: #F1FAFB;
 }

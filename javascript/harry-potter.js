@@ -62,6 +62,7 @@ function showCard(index){
     $("dt").html(deck.cards[index].term)
     $(".card").attr("data-index", index)
     $(".card-number").html(index+1)
+    $(".number-of-cards").html(deck.cards.length)
 }
 
 // at the end viewScore

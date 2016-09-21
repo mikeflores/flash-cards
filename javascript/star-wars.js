@@ -1,6 +1,6 @@
 // Star Wars Object
 var deck = {
-    deckName: "Star Wars",
+    deckName: "Star Wars Universe",
     cards: [ 
         { 
             term: "Vader", 
@@ -23,9 +23,9 @@ var deck = {
 // =====================================
 
 $(document).ready(function(){
-    $(".deckName").html(deck.deckName)
-    showCard(0)
-    $(".mark-as").hide()
+    $(".deckName").html(deck.deckName) // fills in the name of the deck for this page
+    showCard(0) // starts the deck at card number 1
+    $(".mark-as").hide() // hides the grading system
 })
 
 $(".card dt, .card dd").on("click", function(event){
@@ -62,6 +62,7 @@ function showCard(index){
     $("dt").html(deck.cards[index].term)
     $(".card").attr("data-index", index)
     $(".card-number").html(index+1)
+    $(".number-of-cards").html(deck.cards.length) // fills in the total number of cards
 }
 
 // at the end viewScore
